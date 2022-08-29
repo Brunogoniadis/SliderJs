@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="OE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Card Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    
+
+    <section class="swiper mySwiper">
+
+        <header >
+            <div class="header">
+                <img src="images/gibsonTransLogo.png" title="Ir para a página inicial da Musicdot" alt="gibsonLogo" height="125" width="125">
+            </div>
+        </header>
+
+        <div class="swiper-wrapper">
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="images/Gibson1.jpg" alt="card image">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Les Paul Standard</span>
+                    <span class="card__name">'50s P-90</span>
+                    <p class="card__text"> Vintage Deluxe tuners with Keystone buttons, and aged gold Top Hat knobs.
+                        P-90 pickups are loaded with Alnico 5
+                        magnets and Orange Drop® capacitors.
+                    </p>
+                    <button class="card__btn">View More</button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="images/Gibson2.jpg" alt="card image">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Les Paul Tribute </span>
+                    <span class="card__name">T humbuckers</span>
+                    <p class="card__text"> Gibson Les Paul Studio Tribute a pleasure to play.
+                        A mahogany body, maple top and pair of 490 R & T humbucking pickups with Alnico II
+                        magnets provide classic tone, power and sustain.</p>
+                    <button class="card__btn">View More</button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="images/Gibson3.jpg" alt="card image">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">ES-335</span>
+                    <span class="card__name">T humbuckers</span>
+                    <p class="card__text"> Vintage Deluxe style tuners and light weight
+                        aluminum ABR-1 bridge and Stop Bar tailpiece anchored with
+                        steel thumb-wheels and studs. The AAA figured maple is set
+                        off by staggering gloss finishes including Sixties Cherry,
+                        Antique Natural, and Iced Tea.
+                    </p>
+                    <button class="card__btn">View More</button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image">
+                    <img src="images/Gibson4.jpg" alt="card image">
+                </div>
+
+                <div class="card__content">
+                    <span class="card__title">Les Paul Junior Reissue</span>
+                    <span class="card__name">P-90 Custom</span>
+                    <p class="card__text"> Gibson Custom Shop has proudly
+                        kept the recipe the same for this Historic Reissue. From the solid mahogany and hide glue
+                        construction to the vintage-style wiring, the classic Les Paul Junior is back...and ready to
+                        "ruin" you.
+                    </p>
+                    <button class="card__btn">View More</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 15,
+                stretch: 0,
+                depth: 350,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
